@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.jbjorge.plugins.urlscheme"
+    version="0.0.1">
+
+    <engines>
+	    <engine name="cordova" version="2.9.0" />
+	</engines>
+
+	<name>Handles urlSchemes on Android</name>
+
+	<platform name="android">
+     	<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<intent-filter>
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.DEFAULT"/>
+		        <category android:name="android.intent.category.BROWSABLE"/>
+		        <data android:scheme="no.tim.orderevent"/>
+   			</intent-filter>
+		</config-file>
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+    	<config-file target="res/xml/plugins.xml" parent="/plugins">
+            <plugin name="UrlScheme" value="com.phonegap.plugins.urlscheme.UrlScheme"/>
+        </config-file>
+
+        <config-file target="res/xml/config.xml" parent="plugins">
+            <plugin name="UrlScheme" value="com.phonegap.plugins.urlscheme.UrlScheme"/>
+        </config-file>
+
+        <!-- cordova plugin src files -->
+        <source-file src="src/UrlScheme.java" target-dir="src/org/apache/cordova/urlscheme" />
+    </platform>
