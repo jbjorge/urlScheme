@@ -4,13 +4,13 @@
     id="com.jbjorge.plugins.urlscheme"
     version="0.0.1">
 
-    <license>MIT</license>
+	<name>Handles urlSchemes on Android and calls handleOpenURL with startup arguments</name>
 
     <engines>
 	    <engine name="cordova" version="2.9.0" />
 	</engines>
 
-	<name>Handles urlSchemes on Android and calls handleOpenURL with startup arguments</name>
+    <license>MIT</license>
 
 	<platform name="android">
      	<config-file target="AndroidManifest.xml" parent="/manifest/application">
@@ -36,3 +36,5 @@
         <!-- cordova plugin src files -->
         <source-file src="src/UrlScheme.java" target-dir="src/org/apache/cordova/urlscheme" />
     </platform>
+
+</plugin>
