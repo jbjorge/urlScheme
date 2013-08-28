@@ -4,7 +4,11 @@
     id="com.jbjorge.plugins.urlscheme"
     version="0.0.1">
 
-	<name>Handles urlSchemes on Android and calls handleOpenURL with startup arguments</name>
+	<name>android urlScheme</name>
+
+	<description>
+		Handles urlSchemes on Android and calls handleOpenURL with startup arguments.
+	</description>
 
     <engines>
 	    <engine name="cordova" version="2.9.0" />
