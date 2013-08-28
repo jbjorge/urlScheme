@@ -4,11 +4,13 @@
     id="com.jbjorge.plugins.urlscheme"
     version="0.0.1">
 
+    <license>MIT</license>
+
     <engines>
 	    <engine name="cordova" version="2.9.0" />
 	</engines>
 
-	<name>Handles urlSchemes on Android</name>
+	<name>Handles urlSchemes on Android and calls handleOpenURL with startup arguments</name>
 
 	<platform name="android">
      	<config-file target="AndroidManifest.xml" parent="/manifest/application">
