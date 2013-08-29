@@ -17,6 +17,8 @@
     <license>MIT</license>
 
 	<platform name="android">
+        <preference name="SCHEME_NAME" />
+
      	<config-file target="AndroidManifest.xml" parent="/manifest/application">
 			<intent-filter>
 		        <action android:name="android.intent.action.VIEW" />
