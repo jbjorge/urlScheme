@@ -32,9 +32,8 @@ public class UrlScheme extends DroidGap
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        super.setIntegerProperty("splashscreen", R.drawable.splash);
         // Set by <content src="index.html" /> in config.xml
-        super.loadUrl(Config.getStartUrl(), 10000);
+        super.loadUrl(Config.getStartUrl());
     }
     
     @Override
